@@ -12,7 +12,20 @@
  </head>
 
  <body>
- 
+ <!--
+  <div class="container-fluid">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-header">
+      <a class="navbar-brand" href="#">RoCK BANd</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">BAND</a></li>
+      <li><a href="#">TOURS</a></li>
+	  <li><a href="#">CONTACT</a></li>
+    </ul>
+	</nav>
+  </div>-->
  <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -28,7 +41,7 @@
       <li class="active"><a href="#home">HOME</a></li>
       <li><a href="#band">BAND</a></li>
       <li><a href="#tour">TOURS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+	  <li><a href="#contact">CONTACT</a></li>
     </ul>
     </div>
   </div>
@@ -84,12 +97,12 @@
 <br>
 <div id="band" class="container-fluid">
 <hr>
-<h2 style="color: Black; text-align: center; font-family: Comic Sans MS, sans-serif, Arial;"> RockBand </h2>
+<h2 style="color: Black; text-align: center; font-family: Comic Sans MS, cursive, sans-serif;"> RockBand </h2>
 <p style="color: #bf1905; text-align: center; font-size:15px;"> This is a webpage of a random music band. This is a paragraph part where the details and acheivements of band will be penned. The stamp indents band before the accomplished elephant. Music reverts against a fooling roundabout. Music undergoes the interference underneath the rhyme. The immortal runs against the organic track. Band eliminates the patched discipline. The supermarket attends a wealthy vocabulary inside the airport. Music band busts every array. The sic groan presents music band before a precise religion. The banana defeats whatever filter. Music band busts every array. The sic groan presents music band before a precise religion. The banana defeats whatever filter. The sermon shows the pedestrian across an alert glue. The garage rots behind a brigade! The shaking error laughs with the initiate voter. An above parade grows. </p>
-<h4 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, sans-serif, Arial;"> Rocking members of RockBand:</h4>
+<h4 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, cursive, sans-serif;"> Rocking members of RockBand:</h4>
 <br>
-  <div class="row">
-	<div class="col-6 col-lg-4">
+  <div class="col-md-12">
+	<div class="col-6 col-md-4 col-xs-4">
 		<div class="candidate">
 			<div class="img_container">
 				<img src="img/cand1.png" alt="Pic of Candidate1" class="image"/>
@@ -102,7 +115,7 @@
 			</div>
 		</div>
 	</div><!--/span-->
-	<div class="col-6 col-lg-4">
+	<div class="col-6 col-md-4 col-xs-4">
 		<div class="candidate">
 			<div class="img_container">
 				<img src="img/cand2.png" alt="Pic of Candidate2" class="image"/>
@@ -115,7 +128,7 @@
 			</div>
 		</div>
 	</div><!--/span-->
-	<div class="col-6 col-lg-4">
+	<div class="col-6 col-md-4 col-xs-4">
 		<div class="candidate">
 			<div class="img_container">
 				<img src="img/cand3.png" alt="Pic of Candidate3" class="image"/>
@@ -133,39 +146,39 @@
 <br>
 <div id="tour" class="container-fluid tour" style="background-color : rgb(0,0,0);" >
 	<br>
-	<h2 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, Arial, sans-serif;">Hello INDIA....</h2>
-	<h4 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, Arial, sans-serif;">Are you excited to meet us?</h4>
-	<h4 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, Arial, sans-serif; opacity:0.8;">Here are the TOUR DATES!</h4>
+	<h2 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, cursive, sans-serif;">Hello INDIA....</h2>
+	<h4 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, cursive, sans-serif;">Are you excited to meet us?</h4>
+	<h4 style="color: RoyalBlue; text-align: center; font-family: Comic Sans MS, cursive, sans-serif; opacity:0.8;">Here are the TOUR DATES!</h4>
 	<div>
 	<br>
-		<div class="row">
-			<div class="col-12 col-lg-3">
+		<div class="col-md-12">
+			<div class="col-12 col-md-3 col-xs-3">
 				<div class="img_container">
-					<img src="img/hyderabad.jpg" alt="hyderabad" width="100%"/>
+					<img class="img" id="image1" onclick="getImage(1)" src="img/hyderabad.jpg" alt="hyderabad" width="100%"/>
 					<p class="tour-city"><br>Hyderabad</p>
 					<p class="tour-date">4 Nov 2017 Sat</p>
 					<p class="location">Shilpakala Vedika, Madhapur, Hyderabad</p>
 				</div>
 			</div><!--/span-->
-			<div class="col-12 col-lg-3">
+			<div class="col-12 col-md-3 col-xs-3">
 				<div class="img_container">
-					<img src="img/bangalore.jpg" alt="bangalore" width="100%"/>
+					<img class="img" id="image2" onclick="getImage(2)" src="img/bangalore.jpg" alt="bangalore" width="100%"/>
 					<p class="tour-city"><br>Bangalore</p>
 					<p class="tour-date">12 Nov 2017 Sun</p>
 					<p class="location">Indigo XP, Koramangla, Bengaluru</p>
 				</div>
 			</div><!--/span-->
-			<div class="col-12 col-lg-3">
+			<div class="col-12 col-md-3 col-xs-3">
 				<div class="img_container">
-					<img src="img/delhi.jpg" alt="delhi" width="100%"/>
+					<img class="img" id="image3" onclick="getImage(3)" src="img/delhi.jpg" alt="delhi" width="100%"/>
 					<p class="tour-city"><br>Delhi</p>
 					<p class="tour-date">24 Nov 2017 Fri</p>
 					<p class="location">Kamani Auditorium, Copernicus Marg, New Delhi</p>
 				</div>
 			</div><!--/span-->
-			<div class="col-12 col-lg-3">
+			<div class="col-12 col-md-3 col-xs-3">
 				<div class="img_container">
-					<img src="img/mumbai.jpg" alt="Mumbai" width="100%"/>
+					<img class="img" id="image4" onclick="getImage(4)" src="img/mumbai.jpg" alt="Mumbai" width="100%"/>
 					<p class="tour-city"><br>Mumbai</p>
 					<p class="tour-date">17 Dec 2017 Sun</p>
 					<p class="location">Jio Garden, BandraKurla Complex, Mumbai</p>
@@ -175,38 +188,42 @@
 		<br>
 	</div><!--/container-fluid-->
 </div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal_img">
+  <div id="caption"></div>
+</div>
 <div id="contact" class="container-fluid" style="text-align : center;">
 	<h1 style="letter-spacing: 4px; font-family: Segoe UI,Arial,sans-serif;">CONTACT</h1>
 	<p style="font-size: 18px; opacity : 0.80;"><i>Drop a note!</i></p>
 	<br>
 	<br>
-	<div class="col-lg-12">
-		<div class="col-12 col-lg-6 details">
+	<div class="col-md-12">
+		<div class="col-12 col-md-6 details">
 		    <i class="fa fa-map-marker" style="width:30px"></i> Agra, India<br>
 	        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 9999999999<br>
 	        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
 		</div>
-		<div class="col-12 col-lg-6">
+		<div class="col-12 col-md-6">
 			<form action="">
-	          <div class="col-lg-12 form_details">
-		        <div class="col-12 col-lg-6">
+	          <div class="col-md-12 form_details">
+		        <div class="col-12 col-md-6">
 			      <input class="input" type="text" placeholder="Name" required="" name="Name">
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 			      <input class="input" type="text" placeholder="Email" required="" name="Email">
 	            </div>
 		      </div>
-			  <div class="col-lg-12 form_details">
+			  <div class="col-md-12 form_details">
 				  <input class="input" type="text" placeholder="Message" required="" name="Message">
 			  </div>
-			  <div class="col-lg-12 form_details">
+			  <div class="col-md-12 form_details">
 				  <button class="btn btn-primary" style="float: right;" type="submit">SEND</button>
 			  </div>
 	        </form>
 		</div>
 	</div>
 </div>
-	 <br>
 <footer style="text-align: center;">
 	<ul class="list-inline">
 		<li class="list-inline-item">
@@ -228,14 +245,60 @@
 	<hr>
 	<p class="text-muted">Powered by <strong><u><i>PSPK</i></u></strong> 2017</p>
 </footer>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal
+function getImage(x)
+{
+	if(x == 1)
+	{
+		var img = document.getElementById('image1');
+		var modalImg = document.getElementById("modal_img");
+		var captionText = document.getElementById("caption");
+		modal.style.display = "block";
+		modalImg.src = "img/hyderabad.jpg";
+	    captionText.innerHTML = "Hyderebad";
+	}
+	if(x == 2)
+	{
+		var img = document.getElementById('image1');
+		var modalImg = document.getElementById("modal_img");
+		var captionText = document.getElementById("caption");
+		modal.style.display = "block";
+		modalImg.src = "img/bangalore.jpg";
+	    captionText.innerHTML = "Bangalore";
+	}
+	if(x == 3)
+	{
+		var img = document.getElementById('image1');
+		var modalImg = document.getElementById("modal_img");
+		var captionText = document.getElementById("caption");
+		modal.style.display = "block";
+		modalImg.src = "img/delhi.jpg";
+	    captionText.innerHTML = "Delhi";
+	}
+	if(x == 4)
+	{
+		var img = document.getElementById('image1');
+		var modalImg = document.getElementById("modal_img");
+		var captionText = document.getElementById("caption");
+		modal.style.display = "block";
+		modalImg.src = "img/mumbai.jpg";
+	    captionText.innerHTML = "Dumbai";
+	}
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
  </body>
 </html>
-
-<!--<div class="col-lg-12 form_details">
-				<div class="col-lg-10">
-				  <input class="input" type="text" placeholder="Message" required="" name="Message">
-				</div>
-				<div class="col-lg-2">
-				  <button class="btn btn-primary" style="float: right;" type="submit">SEND</button>
-				</div>
-			  </div> -->
